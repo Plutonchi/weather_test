@@ -1,4 +1,7 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget currentWeather(
   IconData icon,
@@ -20,8 +23,9 @@ Widget currentWeather(
         ),
         Text(
           "$temp",
-          style: TextStyle(
-            fontSize: 46.0,
+          style:  GoogleFonts.kanit(
+            fontWeight: FontWeight.bold,
+            fontSize: 50,
           ),
         ),
         SizedBox(
@@ -29,9 +33,9 @@ Widget currentWeather(
         ),
         Text(
           "$location",
-          style: TextStyle(
-            fontSize: 18.0,
-            color: Color(0xff5a5a5a),
+          style: GoogleFonts.lato(
+            fontWeight: FontWeight.bold,
+            fontSize: 40,
           ),
         ),
       ],

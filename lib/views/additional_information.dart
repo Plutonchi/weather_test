@@ -1,13 +1,5 @@
 import 'package:flutter/material.dart';
-
-TextStyle titleFont = TextStyle(
-  fontWeight: FontWeight.w600,
-  fontSize: 18.0,
-);
-TextStyle infoFont = TextStyle(
-  fontWeight: FontWeight.w400,
-  fontSize: 18.0,
-);
+import 'package:google_fonts/google_fonts.dart';
 
 Widget additionalInformation(
   String wind,
@@ -32,14 +24,20 @@ Widget additionalInformation(
               children: [
                 Text(
                   "Wind",
-                  style: titleFont,
+                  style: GoogleFonts.trispace(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 SizedBox(
                   height: 18,
                 ),
                 Text(
                   "Pressure",
-                  style: titleFont,
+                  style: GoogleFonts.trispace(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
               ],
             ),
@@ -49,14 +47,20 @@ Widget additionalInformation(
               children: [
                 Text(
                   "$wind",
-                  style: infoFont,
+                  style: GoogleFonts.notoSerif(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 SizedBox(
                   height: 18,
                 ),
                 Text(
                   "$pressure",
-                  style: infoFont,
+                  style: GoogleFonts.notoSerif(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
               ],
             ),
@@ -66,14 +70,20 @@ Widget additionalInformation(
               children: [
                 Text(
                   "Humidity",
-                  style: titleFont,
+                  style: GoogleFonts.trispace(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 SizedBox(
                   height: 18,
                 ),
                 Text(
                   "Feels Like",
-                  style: titleFont,
+                  style: GoogleFonts.trispace(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
               ],
             ),
@@ -83,14 +93,20 @@ Widget additionalInformation(
               children: [
                 Text(
                   "$humidity",
-                  style: infoFont,
+                  style: GoogleFonts.notoSerif(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
                 SizedBox(
                   height: 18,
                 ),
                 Text(
                   "$feels_like",
-                  style: infoFont,
+                  style: GoogleFonts.notoSerif(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
               ],
             ),
